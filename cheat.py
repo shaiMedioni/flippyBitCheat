@@ -33,25 +33,22 @@ def main():
 
 
 def pressBit(place, answer, index, action):
-    match place:
-            case 0:
-                pressButton(answer[index],'1', action)
-            case 1:
-                pressButton(answer[index],'2', action)
-            case 2:
-                pressButton(answer[index],'3', action)
-            case 3:
-                pressButton(answer[index],'4', action)
-            case 4:
-                pressButton(answer[index],'5', action)
-            case 5:
-                pressButton(answer[index],'6', action)
-            case 6:
-                pressButton(answer[index],'7', action)
-            case 7:
-                pressButton(answer[index],'8', action)
-            case _:
-                pass
+    if place == 0:
+        pressButton(answer[index],'1', action)
+    if place == 1:
+        pressButton(answer[index],'2', action)
+    if place == 2:
+        pressButton(answer[index],'3', action)
+    if place == 3:
+        pressButton(answer[index],'4', action)
+    if place == 4:
+        pressButton(answer[index],'5', action)
+    if place == 5:
+        pressButton(answer[index],'6', action)
+    if place == 6:
+        pressButton(answer[index],'7', action)
+    if place == 7:
+        pressButton(answer[index],'8', action)
 
 
 def getHexEnemy(i, driver):
